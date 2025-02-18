@@ -89,7 +89,7 @@ export default function AuthPage() {
 				setLoading(false);
 				toast.success("Logged in successfully");
 				reset();
-				router.push("/homepage");
+				router.push("/mail");
 				router.refresh();
 			}
 		} catch (error) {
