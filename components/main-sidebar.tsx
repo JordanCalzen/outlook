@@ -1,3 +1,5 @@
+"use client";
+import { logout } from "@/actions/auth";
 import {
 	Home,
 	Calendar,
@@ -7,6 +9,8 @@ import {
 	FileSpreadsheet,
 	AppWindow,
 	Presentation,
+	LogOutIcon,
+	LogOut,
 } from "lucide-react";
 
 const MainSidebar = () => {
@@ -36,6 +40,12 @@ const MainSidebar = () => {
 			<button className="mb-4 p-2 hover:bg-gray-200 rounded-lg">
 				<Presentation className="w-6 h-6 text-orange-500" />
 			</button>
+			<div
+				onClick={() => logout()}
+				className="mb-4 p-2 hover:bg-gray-200 rounded-lg"
+			>
+				<LogOutIcon className="w-6 h-6" />
+			</div>
 		</div>
 	);
 };
