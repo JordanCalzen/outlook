@@ -61,7 +61,7 @@ export default function AuthPage() {
 				setLoading(false);
 				toast.success("created Account");
 				reset();
-				router.push("/homepage");
+				router.push("/mail");
 				router.refresh();
 			}
 		} catch (error) {
