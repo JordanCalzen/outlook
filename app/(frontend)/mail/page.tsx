@@ -29,7 +29,7 @@ export default async function MailPage() {
 					className="block dark:hidden"
 				/>
 			</div>
-			<div className="hidden flex-col md:flex">
+			<div className="hidden flex-col md:flex h-[90vh]">
 				<Mail
 					accounts={accounts}
 					mails={mails}

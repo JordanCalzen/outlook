@@ -17,7 +17,7 @@ export default async function FrontLayout({
 		<div>
 			<MainSidebar />
 			<Header />
-			<div className="pl-[3rem] pt-[3.2rem] fixed top-0">{children}</div>
+			<div className="pl-[3rem] pt-[3.2rem] ">{children}</div>
 		</div>
 	);
 }
